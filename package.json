@@ -1,0 +1,51 @@
+{
+  "name": "react-todo-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "fake-json": "json-server ./src/assets/db.json --watch --port 3001"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "classnames": "2.3.2",
+    "immer": "^9.0.15",
+    "json-server": "0.17.0",
+    "node-sass": "7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "^7",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^29.1.2",
+    "prettier": "2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "prettier --write",
+      "eslint --fix --quiet",
+      "jest --bail --findRelatedTests"
+    ]
+  }
+}

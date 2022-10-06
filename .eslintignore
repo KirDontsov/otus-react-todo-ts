@@ -1,0 +1,8 @@
+.husky
+dist
+node_modules
+.eslintrc.js
+schema.generated.d.ts
+*.config.js
+src/gql/types.ts
+src/**/*.generated.ts
